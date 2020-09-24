@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <form>
+        <label class="nome">Nome</label><br>
+        <input class="nome" id="addNome" type="text"  required size="30" maxlength="50" pattern="[a-zA-Z\s]+$" autofocus>
+        <br>
+        <section>
+            <label class="nota1" id="addNota1 ">Nota 1</label><br>
+            <input class="nota1" type="text" name="nota1" required autofocus>
+           
+            <br><label class="nota2" >Nota 2</label><br>
+            <input class="nota2" id="addNota2" type="text" name="nota2" required autofocus>
+            
+            <br><label class="nota3">Nota 3</label><br>
+            <input class="nota3" id="addNota3" type="text" name="nota3" required autofocus>
+            <input type = "button" onclick="res()" value="Calcular media">
+       
+    </section>
+    </form>
+    <script src="Media.js"></script>
+</body>
+
+</html>
