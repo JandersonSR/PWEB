@@ -3,12 +3,16 @@
     padding: 0;
 }
 body{
-    background-color: rgb(239, 245, 245);
+    background-color: rgb(253, 252, 252);
     font-size: 1.2em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     height: 100%;
     width: 100%;
+    text-align: center;
+}
+h1{
+    text-align: center;
 }
 .nome{
     margin: 15px 25px;
@@ -17,4 +21,34 @@ body{
 .nota1, .nota2, .nota3{
     margin: 15px 25px;
     text-align: left;
+}
+#op{
+    border: thin silver solid;
+    width: 30%;
+   position:flex;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 5px;
+   align-content: center;
+   text-align: center;
+}
+.resultado{
+    margin-top: 20px;
+    text-align: center;
+}
+#button{
+    margin: 15px 25px;
+    font-size: 0.8em;
+    border-radius: 15%;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase;
+    background-color:#851f1f ;
+    border-color: #901a1a;
+}
+#button:hover{
+    border-width: 5px;
+    background-color:#851f1f ;
+    border-color: #901a1a;
 }
