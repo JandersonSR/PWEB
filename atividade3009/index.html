@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PESQUISA SOBRE PALESTRA</h1>
+    </header>
+
+   <section id="info">
+       <label>Idade</label>
+       <input id="age" type="number" required>
+       <br>
+       <label>Sexo</label>
+       <br>
+       <label>Masculino</label>
+        <input class="sexo" name="sexo" type="radio" value="1" checked>
+        <label>Feminino</label>
+        <input class="sexo" name="sexo" type="radio" value="2">
+   </section>
+ 
+
+    <footer class="slideContainer">
+       <label>Opnião</label>
+        <input type="range" min="1" max="4" id="myRange" class="slider">
+        <p>Valor: <span id="value"></span></p> 
+        <input type="button" id="button" onclick="res()" value="Enviar">
+    </footer>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
