@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedra, Papel, Tesoura</title>
+</head>
+<body>
+    <header>
+        <h1>Pedra, Papel, Tesoura</h1>
+     </header>
+     <div class="container">
+        <div class="score-container">
+            <span class="user">You</span>
+            <span id="score"></span>
+            <span class="computer">Computer</span>
+        </div>
+        <div class="buttons">
+            <button id="paper" class="btn" value="paper" onclick="game(this.value)"><i class="far fa-hand-paper"></i></button>
+            <button id="rock" class="btn" value="rock" onclick="game(this.value)"><i class="far fa-hand-rock"></i></button>
+            <button id="scissor" class="btn" value="scissor" onclick="game(this.value)"><i class="far fa-hand-scissors"></i></button>
+        </div>
+        <div id="challenge">
+            <div id="you">
+                <div id="userObject" class="btn"></div>
+                <div class="who your">You</div>
+            </div>
+            <div id="result"><p id="who"></p></div>
+            <div id="com">
+                <div id="comObject" class="btn"></div>
+                <div class="who their">Computer</div>
+            </div> 
+        </div>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
