@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+    <style> 
+        body{
+            width: 100%;
+            align-content: center;
+            padding-left: 40%;
+        }
+        div img{
+            width: 400px;
+            height:400px;
+            margin-left:20%;
+            margin-right: 20%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> ABRA A JANELA </h1>
+    <div
+    onmouseout="(document.getElementById('imagem').src= 'aberta.png')"
+    onmouseover="(document.getElementById('imagem').src= 'fechada.png')"
+    onclick="(document.getElementById('imagem').src= 'quebrada.png')">
+    <img id="imagem" src="fechada.png">
+    </div>  
+  
+</body>
+</html>

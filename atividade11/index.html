@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9 </title>
+</head>
+<body>
+    <input type="text" placeholder="Informe um texto" id="texto"> </input>
+    <br><br>
+    <input name="Maiuscula" value="Maiuscula" type="checkbox"  id="escolha1">Maiuscula</input>
+    <input name="Minuscula" value="Minuscula" type="checkbox" id="escolha2">Minuscula</input>
+    <br>
+    <br>
+    <button onclick="converter()"> Converter</button>
+
+
+    <script>
+        function converter(){
+            var texto = document.querySelector('#texto').value;
+            var escolha1 = document.getElementById("escolha1");
+            var escolha2 = document.getElementById("escolha2");
+
+            escolha1.onclick = function() {  
+                    alert( texto.toUpperCase());
+            }
+            escolha2.onclick = function(){
+                alert(texto.toLowerCase());
+            }
+            
+        }
+        alert("fim");
+    </script>
+</body>
+</html>

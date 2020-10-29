@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7 exercicio-2</title>
+</head>
+<body>
+    <script>
+        function Retangulo() {
+			var dx; 
+			var dy;
+            var area;
+
+			this.setX = function (vX) {
+				this.dx = vX;
+			}
+
+			this.setY = function (vY) {
+				this.dy = vY;
+			}
+
+			this.getX = function () {
+				return this.dx;
+			} 
+
+			this.getY = function () {
+				return this.dy;
+			}
+           
+			this.mostraArea = function () {
+                area = this.dx * this.dy;
+                alert("Area do retangulo: " + area);
+               
+			}
+		}
+
+		var objRetangulo = new Retangulo();
+
+		objRetangulo.setX(5);
+		objRetangulo.setY(4);
+		objRetangulo.mostraArea();
+    </script>
+
+</body>
+</html>

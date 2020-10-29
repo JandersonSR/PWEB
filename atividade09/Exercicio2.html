@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7 Exercicio-2</title>
+</head>
+
+<body>
+    <script>
+        function Conta() {
+            var nomeCliente;
+            var banco;
+            var numConta;
+            var saldo;
+
+            this.setNome = (value) => {
+                nomeCliente = value;
+            }
+            this.getNome = () => {
+                return nomeCliente;
+            }
+
+            this.setBanco = (value) => {
+                banco = value;
+            }
+            this.getBanco = () => {
+                return banco;
+            }
+
+            this.setNumConta = (value) => {
+                numConta = value;
+            }
+            this.getNumConta = () => {
+                return numConta;
+            }
+
+            this.setSaldo = (value) => {
+                saldo = value;
+            }
+            this.getSaldo = () => {
+                return saldo;
+            }
+
+        }
+
+
+        function ContaCorrente() {
+            var saldoEspecial;
+
+            this.getSaldoEspecial = () => {
+                return saldoEspecial;
+            }
+            this.setSaldoEspecial = (value) => {
+                saldoEspecial = value;
+            }
+        }
+
+
+
+        function ContaPoupanca() {
+            var juros;
+            var dataVencimento;
+
+            this.getJuros = () => {
+                return juros;
+            }
+            this.getDataVencimento = () => {
+                return dataVencimento;
+            }
+            this.setJuros = (value) => {
+                juros = value;
+            }
+            this.setDataVencimento = (value) => {
+                dataVencimento = value;
+            }
+
+        }
+
+        
+
+        //herança
+        ContaCorrente.prototype = new Conta();
+        ContaPoupanca.prototype = new Conta();
+
+        //criando novo objeto
+        nContaCorrente = new ContaCorrente();
+        nContaPoupanca = new ContaPoupanca();
+
+
+        nContaCorrente.setNome("Jose da Silva");
+        nContaCorrente.setBanco("Banco XYZ");
+        nContaCorrente.setNumConta("125369884");
+        nContaCorrente.setSaldoEspecial("3000.50");
+        nContaCorrente.setSaldo("2020.50");
+
+        nContaPoupanca.setNome("Mariada Silva");
+        nContaPoupanca.setBanco("Banco YYX");
+        nContaPoupanca.setNumConta("84532184");
+        nContaPoupanca.setSaldo("10000.50");
+        nContaPoupanca.setDataVencimento("31/10/2021");     
+        nContaPoupanca.setJuros("10%");     
+           
+        alert("Conta Corrente"+ '\n' + 'Nome '+ nContaCorrente.getNome() + " | " + 'Banco '+ nContaCorrente.getBanco() + ' | ' + 'Numero da conta '+ nContaCorrente.getNumConta() + 
+              '\n' + 'Saldo '+ nContaCorrente.getSaldo() +" | "+ 'Saldo Especial '+nContaCorrente.getSaldoEspecial());
+
+        alert("Conta Poupança"+ '\n' + 'Nome '+ nContaPoupanca.getNome() + " | " + 'Banco '+ nContaPoupanca.getBanco() + ' | ' + 'Numero da conta '+ nContaPoupanca.getNumConta() + 
+              '\n' + 'Saldo '+ nContaPoupanca.getSaldo() +" |  "+  'Data Vencimento  '+ nContaPoupanca.getDataVencimento() + ' | ' + 'Taxa de juros '+ nContaPoupanca.getJuros());
+    </script>
+</body>
+
+</html>
