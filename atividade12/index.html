@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Formulario Principal</h1>
+    </header>
+    <form action="teste" method="POST" name="formulario1" id="formulario1" onsubmit="return validarDados();">
+        <div class="content">
+            <label>Nome</label>
+            <input type="text" value="nome" minlength="10" id="idNome" size="52" maxlength="150"><br /><br /><br />
+            <label>E-mail</label>
+            <input name="idEmail" type="email" id="idEmail" size="52" maxlength="150"
+                value="seuemail@mail.com"><br /><br /><br />
+            <label>Comentário</label><br />
+            <textarea name="idMensagem" minlength="20" cols="70" rows="8" id="idMensagem" value="" input></textarea>
+        </div>
+        <div class="content">
+            <h2>Pesquisa</h2>
+        </div>
+
+
+        <p>Primeira vez nesta página?</p>
+        <div class="content2">
+            <input type="radio" id="escolha1" name="chck"><label>Sim</label><input type="radio" name="chck"  id="escolha2"> <label>Não</label>
+        </div>
+        <footer>
+            <input type="submit" value="Enviar"> <input type="button" value="Limpar" >
+        </footer>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>

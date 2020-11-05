@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(8, 2, 2);
+}
+
+h1, label, p{
+    text-align: center;
+    text-transform: uppercase; 
+    color: #f5f5f6;
+}
+.content{
+  margin-left: 35vw;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+.content2{
+    margin-left: 45vw;
+  }
+footer{
+    margin-left: 45vw;
+    margin-top: 65px;
+}
