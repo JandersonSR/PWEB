@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <H1>Cursos</H1>
+    </header>
+
+    <div id="top">
+        <span>
+            <button a href='#ADS' onclick="ConfirmAds()">
+                <img src="ads.jpg" width="500px" height="400px"><br />
+                Analise e Desenvolvimento de Sistemas
+            </button>
+
+            <button a href='#Processos' onclick="ConfirmProc()">
+                <img src="processos.jpg" width="500px" height="400px"><br />
+                Processos
+            </button>
+        </span>
+
+    </div>
+
+    <div id="mid">
+        <span>
+            <button a href='#Projetos' onclick="ConfirmProj()">
+                <img src='projetos.jpg' width="500px" height="400px"><br />
+                Projetos</button>
+
+            <button a href='#Manu' onclick="ConfirmProM()">
+                <img src="ManufaturaAvancada.jpg" width="500px" height="400px"><br />
+                Manufatura Avançada
+            </button>
+        </span>
+    </div>
+
+    <script>
+
+        function ConfirmAds() {
+
+
+            var decisao = confirm("Deseja mesmo Continuar");
+
+            if (decisao) {
+                window.location = 'ads.html';
+
+            } else {
+
+                alert("Você clicou no botão CANCELAR");
+
+            }
+        }
+
+        function ConfirmProc() {
+
+
+            var decisao = confirm("Deseja mesmo Continuar");
+
+            if (decisao) {
+                window.location = 'proc.html';
+
+            } else {
+
+                alert("Você clicou no botão CANCELAR");
+
+            }
+        }
+
+        function ConfirmProj() {
+
+
+            var decisao = confirm("Deseja mesmo Continuar");
+
+            if (decisao) {
+                window.location = 'proj.html';
+
+            } else {
+
+                alert("Você clicou no botão CANCELAR");
+
+            }
+        }
+        function ConfirmProM() {
+
+
+            var decisao = confirm("Deseja mesmo Continuar");
+
+            if (decisao) {
+                window.location = 'manu.html';
+
+            } else {
+
+                alert("Você clicou no botão CANCELAR");
+
+            }
+        }
+    </script>
+</body>
+
+</html>

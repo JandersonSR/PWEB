@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(8, 2, 2);
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase; 
+    color: #f5f5f6;
+}
+button{
+    background-color: rgb(109, 43, 43);
+    color: #f5f5f6;
+    text-transform: uppercase; 
+    position: relative;
+    margin: 10px;
+    margin-left: 6vw;
+    margin-bottom: 3vw;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Helvia', 'Arial', 'Sans-serif';
+	font-size: 145%;
+    font-weight: 700;
+}
+button:hover{
+    background-color: rgb(109, 43, 43);
+    border-color: rgb(109, 43, 43);
+    border-width: 5px;
+}
+button img{
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
